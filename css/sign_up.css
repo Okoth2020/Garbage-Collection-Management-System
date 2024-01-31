@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #1F2544;
+    --secondary-color: #474F7A;
+    --button-color: #81689D;
+    --light-color: #FFD0EC;
+}
+body{
+    background-color: var(--secondary-color);
+}
+.pagetitle{
+    text-align: center;
+    background-color: var(--primary-color);
+    line-height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+}
+form{
+    background-color: var(--light-color);
+    width: 45%;
+    margin: auto;
+    border-radius: 10px;
+}
+form .formtitle{
+    text-align: center;
+    margin: 10px;
+    margin-top: 50px;
+    color: var(--primary-color);
+}
+form #info{
+    margin: 20px;
+}
+form #info input{
+    width: 90%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px black transparent;
+    text-align: left;
+    font-size: large;
+}
+.submission{
+    width: 100%;
+    text-align: center;
+}
+.submission button{
+    width: 70%;
+    background-color: var(--button-color);
+    color: white;
+    height: 50px;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.submission p{
+    font-size: large;
+}
+.submission p:last-child{
+    margin-bottom: 20px;
+}
+.submission a{
+    text-decoration: none;
+    color: blue;
+}
+.login-container{
+    display: none;
+}
+.admin-container{
+    display: none;
+}

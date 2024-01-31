@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #1F2544;
+    --secondary-color: #474F7A;
+    --button-color: #81689D;
+    --light-color: #FFD0EC;
+}
+body{
+    background-color: var(--light-color);
+}
+header{
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    font-size: larger;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-weight: bold;
+}
+header .pagetitle{
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    list-style: none;
+}
+header .user{
+    margin-right: 20px;
+}
+header ul li{
+    margin: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+}
+header ul li a:hover{
+    color: greenyellow;
+}
+.first-home-content{
+    width: 100%;
+    margin-top: 90px;
+    
+}
+.content{
+    background-image: url(../images/pexels-tom-fisk-3174348.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content .cont{
+    width: 100%;
+    height: 60vh;
+    width: 100%;
+
+}
+.content .text{
+    position: absolute;
+    color: blue;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+
+}
+.text button{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--button-color);
+    margin-top: 40px;
+    font-size: large;
+    cursor: pointer;
+    padding: 10px;
+}
+.text button a{
+    color: white;
+    text-decoration: none;
+}
+footer{
+    background-color: var(--primary-color);
+}
+.footercontent{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+}
+.footercontent a{
+    text-decoration: none;
+    color: white;
+}
+.footercontent a,p{
+    margin: 10px;
+    margin-left: 0;
+}
+.footercontent h2{
+    text-align: left;
+}
+
+.signup_login{
+    margin-left: 10px;
+}
+.signup_login a{
+    margin: 10px;
+    text-decoration: none;
+}
+.signup_login button{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--button-color);
+    color: white;
+
+}
