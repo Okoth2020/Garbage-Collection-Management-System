@@ -1,69 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garbbage Collection Homepage</title>
-    <link rel="stylesheet" href="../css/home.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <title>Garbage Collection System</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/pricing.css">
+    <script defer src="../js/main.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="../images/logo.png" alt="">
+        <span class="logo-text">Garbage Collection Management System</span>
+      </div>
+      <ul class="links">
+        <li><a href="#" class="active">HOME</a></li>
+        <li><a href="#">ADMIN</a></li>
+        <li><a href="#">DRIVER</a></li>
+        <li><a href="#">USER</a></li>
+      </ul>
+    </nav>
     <header>
-        <div class="pagetitle">GARBBAGE COLLECTION MANAGEMENT SYSTEM</div>
-        <nav>
-            <ul>
-                <li><a href="./home.html">Home</a></li>
-                <li><a href="./about.html">About Us</a></li>
-                <li><a href="./pricing.html" target="_parent">Pricing</a></li>
-                <li><a href="">Contact Us</a></li>
-                <!-- <li><a href="" target="_parent">Request Status</a></li> -->
-                <!-- <li><a href="">Log Out</a></li>
-                <li><a href="">Admin</a></li> -->
-            </ul>
-            <!-- <div class="user">Hello User</div> -->
-             <div class="signup_login">
-                <a href=""><button>Sign Up</button></a>
-                <a href=""><button>Log In</button></a>
-             </div>
-        </nav>
+      <div class="image-slider">
+        <img src="../images/garbage1.jpg" alt="" class="garbage1" />
+        <img src="../images/garbage2.jpg" alt="" class="garbage2" />
+        <img src="../images/garbage3.jpg" alt="" class="garbage3" />
+      </div>
+      <div class="slider-content">
+        <span>welcome to garbage collection management system</span>
+        <span>best garbage management system</span>
+        <span
+          >Our service goes beyond just collecting garbage, we are your partner
+          in providing quality living. We are also advocate for <br />
+          protections and preservations of the environment.</span
+        >
+      </div>
+      <div class="slider-nav">
+        <input type="radio" name="slider" id="slider1" checked />
+        <input type="radio" name="slider" id="slider2" />
+        <input type="radio" name="slider" id="slider3" />
+      </div>
     </header>
     <main>
-        <section class="first-home-content">
-            <div class="content">
-                <div class="cont"></div>
-                <div class="text">
-                    <p>Providing the industry-leading solutions you need. Keep your environment clean with us.</p>
-                    <button><a href="./pricing.html" target="_parent">Packages</a></button>
-                </div>
-            </div>
+      <div class="pricing">
+        <div class="info">
+          <h2>Available packages</h2>
+          <hr />
+        </div>
+        <div class="pricing_cards">
+          <div class="residential" id="card">
+            <h2>Residential</h2>
+            <p>
+              This pricing is applicable for people living in different
+              residential areas.
+            </p>
+            <p>Price: $30</p>
+            <button>Request Now</button>
+          </div>
+          <div class="business" id="card">
+            <h2>Business</h2>
+            <p>
+              This pricing is applicable for different businesses in different
+              residential areas.
+            </p>
+            <p>Price: $100</p>
+            <button>Request Now</button>
+          </div>
+          <div class="industrial" id="card">
+            <h2>Industrial</h2>
+            <p>
+              This pricing is applicable for industries in different residential
+              areas.
+            </p>
+            <p>Price: $150</p>
+            <button>Request Now</button>
+          </div>
+          <div class="construction" id="card">
+            <h2>Construction site</h2>
+            <p>
+              This pricing is applicable for construction sites in different
+              residential areas.
+            </p>
+            <p>Price: $200</p>
+            <button>Request Now</button>
+          </div>
+        </div>
+      </div>
 
-        </section>
+      <div class="About-Us">
+        <div class="about-title">About Us</div>
+        <h2>Our Goal</h2>
+        <p>
+          Our goal is to collect more garbage as possible in different areas
+          despite the distance between you and us.This is to achieve
+          environmental preservation and also ensure maximum recycling of
+          garbage.
+        </p>
+        <h2>What makes us unique?</h2>
+        <ol type="1">
+          <li>
+            <p>
+              Good customer service is a pivotal aspect of our company. Residents
+              can now experience a more responsive and user-friendly interface,
+              allowing for efficient query resolution, timely assistance, and
+              improved communication channels with the waste management authorities.
+            </p>
+          </li>
+          <li>
+            <p>
+              Incorporation of a feedback mechanism in our system enables residents
+              to actively participate in the process, sharing their experiences and
+              concerns. This feedback loop fosters a sense of community engagement
+              and provides valuable insights for continuous improvement of the waste
+              management services.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Accessibility to areas that traditionally faced difficulties in
+              accessing government services is a key advantage. With the new system,
+              remote or underserved regions can now benefit from streamlined waste
+              collection processes, contributing to a more inclusive and equitable
+              distribution of essential services.
+            </p>
+          </li>
+        </ol>
+
+    </div>
+      
     </main>
     <footer>
-        <div class="footercontent">
-            <div class="footercont1">
-                <h2>Services</h2>
-                <p><a href="#">Zero Waste</a></p>
-                <p><a href="#">Dumpster Rental</a></p>
-                <p><a href="#">Recycling Services</a></p>
-                <p><a href="#">Residential Pickup</a></p>
-            </div>
-            <div class="footercont2">
-                <h2>Get In Touch</h2>
-                <p>Location</p>
-                <p>Telephone</p>
-                <p>Email</p>
-                <p>Time</p>
-            </div>
-            <div class="footercont3">
-                <h2>Links</h2>
-                <p><a href="#">Request Pickup</a></p>
-                <p><a href="#">Our Industries</a></p>
-                <p><a href="#">Management</a></p>
-                <p><a href="#">Start Service</a></p>
-            </div>
+      <div class="first-info">
+        <div class="address">
+          <p>Address</p>
+          <li><a href="#">Ongata Rongai,Nairobi</a></li>
+          <li><a href="#">+254796963455</a></li>
+          <li><a href="#">info@gmail.com</a></li>
         </div>
+        <div class="quick-links">
+          <ul>
+            <p>Quick links</p>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Admin</a></li>
+            <li><a href="#">Driver</a></li>
+            <li><a href="#">User</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="second-info">
+        <div class="copy-right">&copy;Garbage Collection Management System, All Rights Reserved.</div>
+        <div class="system-name"><p>Garbage Collection Management System</p></div>
+
+      </div>
 
     </footer>
-    
-</body>
+  </body>
 </html>

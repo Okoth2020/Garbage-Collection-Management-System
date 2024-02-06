@@ -1,38 +1,25 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 :root {
-    --primary-color: #1F2544;
-    --secondary-color: #474F7A;
-    --button-color: #81689D;
-    --light-color: #FFD0EC;
+    --primary-color: #e3e3e2;
+    --secondary-color: #fefefd;
+    --text-color: #646464;
+    --nav-color: #6173c4;
+    --footer-color: #3f3f3e;
+    --button-color: #238cf2;
 }
 
-body {
-    background-color: var(--light-color);
-    display: flex;
-    flex-direction: column;
-    height: 100vh; /* Ensure the body takes the full viewport height */
+.About-Us{
+    margin-top: 20px;
+    padding: 20px;
 }
-main{
-    margin-top: 100px;
-}
-main hr{
+.About-Us hr{
     height: 5px;
     background-color: var(--primary-color);
 }
-main p{
+.About-Us p{
     font-size: 20px;
 }
-.bodytitle{
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
 
-main .about_content{
+.About-Us .about_content{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -40,101 +27,15 @@ main .about_content{
     text-align: center;
     margin: 20px;
 }
-
-header {
-    background-color: var(--primary-color);
-    color: white;
+.About-Us *p{
+    margin-right: 50px;
+}
+.About-Us .about-title{
     text-align: center;
-    font-size: larger;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    font-size: 40px;
     font-weight: bold;
-    flex: 0 0 20%;
-    z-index: 100; /* Ensure header stays on top */
+}
+.About-Us li{
+    margin-bottom: 10px;
 }
 
-/* header .pagetitle {
-    font-size: x-large;
-} */
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-header ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    list-style: none;
-}
-
-header .user {
-    margin-right: 20px;
-}
-
-header ul li {
-    margin: 20px;
-}
-
-header ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-header ul li a:hover {
-    color: greenyellow;
-}
-
-footer {
-    background-color: var(--primary-color);
-    flex: 0 0 20%;
-    margin-top: auto; /* Push footer to the bottom */
-}
-
-.footercontent {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
-    color: white;
-}
-
-.footercontent a {
-    text-decoration: none;
-    color: white;
-}
-
-.footercontent a,
-p {
-    margin: 10px;
-    margin-left: 0;
-}
-
-.footercontent h2 {
-    text-align: left;
-}
-
-.signup_login {
-    margin-left: 10px;
-}
-
-.signup_login a {
-    margin: 10px;
-    text-decoration: none;
-}
-
-.signup_login button {
-    width: 100px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: var(--button-color);
-    color: white;
-}
