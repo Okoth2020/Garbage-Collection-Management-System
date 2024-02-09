@@ -3,10 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Driver Dashboard</title>
     <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/5f6453ff01.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../css/driver/dashboard.css">
 </head>
 <body>
-    
-</body>
+    <nav>
+        <div class="systemname-dashboard">
+            <div class="sysname">Garbage Collection Management System</div>
+            <div class="dash-logo"><i class="fa-solid fa-house"></i> / Dashboard</div>
+        </div>
+        <div class="nav-icons">
+            <div class="notification"><i class="fa-solid fa-bell"></i></div>
+            <div class="user-icon"><i class="fa-solid fa-user"></i></div>
+        </div>
+    </nav>
+    <main>
+        <div class="side-bar">
+            <div class="personal-info">
+                <img src="../../images/person.jpeg" alt="">
+                <div class="name">Name</div>
+                <div class="email">Email</div>
+            </div>
+            <hr>
+            <div class="side-links">
+                <ul>
+                    <li><a href="">Dashboard</a></li>
+                    <li> <a href="">Assigned Garbage Bin</a></li>
+                    <li></i> <a href="">Assign Complain</a></li>
+                    <li> <a href="">Report</a></li>
+                    <li><a href="">Search</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="content-title">Dashboard</div>
+            <div class="content">
+                <div class="content-wrapper">
+                    <div class="content-name">Welcome <span id="user-name">John Doe</span></div>
+                    <button id="user-profile">View Profile</button>
+                    <div class="content-cards">
+                            <div class="content-card">
+                            <div class="content-card-title">Total Assign Complain</div>
+                            <div class="content-card-count">0</div>
+                            <div class="content-card-details">
+                            <a href="#">View Details</a></div>
+                            </div>
+                            <!-- Other cards -->
+                            <div class="content-card">
+                            <div class="content-card-title">Inprogress Complain</div>
+                            <div class="content-card-count">0</div>
+                            <div class="content-card-details">
+                            <a href="#">View Details</a></div>
+                            </div>
+                            <div class="content-card">
+                            <div class="content-card-title">Completed Complain</div>
+                            <div class="content-card-count">0</div>
+                            <div class="content-card-details">
+                            <a href="#">View Details</a></div>
+                            </div>
+                            <div class="content-card">
+                            <div class="content-card-title">Total Assigned Garbage Bin</div>
+                            <div class="content-card-count">0</div>
+                            <div class="content-card-details">
+                            <a href="#">View Details</a></div>
+                            </div>
+                            <div class="content-card">
+                            <div class="content-card-title">Inprogress</div>
+                            <div class="content-card-count">0</div>
+                            <div class="content-card-details">
+                            <a href="#">View Details</a></div>
+                            </div>
+                            <div class="content-card">
+                            <div class="content-card-title">Garbage Cleaned</div>
+                            <div class="content-card-count">0</div>
+                            <div class="content-card-details">
+                            <a href="#">View Details</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </html>

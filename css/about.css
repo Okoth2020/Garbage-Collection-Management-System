@@ -11,9 +11,8 @@
     margin-top: 20px;
     padding: 20px;
 }
-.About-Us hr{
-    height: 5px;
-    background-color: var(--primary-color);
+.About-Us h2{
+    padding: 10px;
 }
 .About-Us p{
     font-size: 20px;
