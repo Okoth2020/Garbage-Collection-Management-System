@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/5f6453ff01.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../../css/admin/driver/manage_driver.css">
+</head>
+<body>
+    <nav>
+        <div class="systemname-dashboard">
+            <div class="sysname">Garbage Collection Management System</div>
+            <div class="dash-logo"><i class="fa-solid fa-house"></i> / Collection Requests</div>
+        </div>
+        <div class="nav-icons">
+            <div class="notification"><i class="fa-solid fa-bell"></i></div>
+            <div class="user-icon"><i class="fa-solid fa-user"></i></div>
+        </div>
+    </nav>
+    <main>
+        <div class="side-bar">
+            <div class="personal-info">
+                <img src="../../../images/person.jpeg" alt="">
+                <div class="name">Admin</div>
+                <div class="email">Email</div>
+            </div>
+            <hr>
+            <div class="side-links">
+                <ul>
+                    <li> <a href="">Dashboard</a></li>
+                    <li> <a href="">Driver</a></li>
+                    <li><a href="">Complains</a></li>
+                    <li><a href="">Registered Users</a></li>
+                    <li><a href="">Collection Requests</a></li>
+                    <li><a href="">Payments</a></li>
+                    <li> <a href="">Report</a></li>
+                    <li><a href="">Search</a></li>
+                    <li><a href="">Page</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="content-title">Collection Requests</div>
+            <div class="content">
+                <div class="content-wrapper">
+                    <div class="entries-search">
+                        <div class="entries">
+                            <label for="entries">Show</label>
+                            <span>
+                                <select name="entries" id="entries">
+                                    <option value="">10</option>
+                                </select>
+                            </span>
+                            <span>entries</span>
+                        </div>
+                        <div class="search">
+                            <label for="search">Search: </label>
+                            <input type="search" name="search" id="search">
+                        </div>
+                    </div>
+                    <div class="search-table">
+                        <table>
+                            <thead>
+                                    <th>S.No</th>
+                                    <th>Request Number</th>
+                                    <th>Name</th>
+                                    <th>MobileNumber</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>12349087</td>
+                                    <td>Test</td>
+                                    <td>0789567434</td>
+                                    <td>Processing</td>
+                                    <td>
+                                        <button>View</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>12347865</td>
+                                    <td>Test</td>
+                                    <td>0789567434</td>
+                                    <td>Processing</td>
+                                    <td>
+                                        <button>View</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>12343456</td>
+                                    <td>Test</td>
+                                    <td>0789567434</td>
+                                    <td>Completed</td>
+                                    <td>
+                                        <button>View</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="bottom-content">
+                            <label for="entries">Showing <span>1</span> to <span>4</span> of <span>4 </span>entries</label>
+                            <div class="page-entries-nav">
+                                <button>Previous</button>
+                                <button>1</button>
+                                <button>Next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</html>

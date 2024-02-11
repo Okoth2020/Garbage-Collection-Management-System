@@ -95,7 +95,7 @@ main .container .content-title{
     background-color: lightgrey;
 }
 main .container .content{
-    width: 100%;
+    width: 80%;
     height: 93%;
     padding: 20px 20px;
 
@@ -106,43 +106,31 @@ main .container .content{
     display: flex;
     flex-direction: column;
 }
-.container .content-wrapper .content-name{
-    color: brown;
-    padding: 10px 0;
-    font-weight: bold;
+
+form input{
+    padding: 10px 0; 
+    width: 100%;
+    border: none;  
+    border-bottom: 2px solid gray; 
+    outline-style: none;
     font-size: large;
 }
-.container .content-wrapper button{
-    width: 100px;
+form *label{
     padding: 10px 0;
+}
+form button{
+    margin-top: 20px;
+    padding: 10px 0;
+    width: 100px;
     background-color: var(--button-color);
     color: white;
+    font-size: 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
-.container .content-wrapper .content-cards{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 60px;
-    padding: 20px 0;
-}
-.container .content-wrapper .content-card{
-    /* border: 2px solid black; */
-    padding: 10px 20px;
-    border: none;
-    box-shadow: 5px 5px 5px black;    
-}
-.container .content-wrapper .content-card .content-card-title{
-    padding: 10px 0;
-}
-.container .content-wrapper .content-card .content-card-count{
-    padding: 10px 0;
-}
-.container .content-wrapper .content-card .content-card-details{
-    padding: 10px 0;
-}
-.container .content-wrapper .content-card .content-card-details a{
-    text-decoration: none;
-    font-weight: bold;
+form button:hover{
+    background-color: white;
+    color: var(--button-color);
+    border: 1px solid var(--button-color);
 }

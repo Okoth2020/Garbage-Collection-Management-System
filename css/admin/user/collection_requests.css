@@ -106,43 +106,56 @@ main .container .content{
     display: flex;
     flex-direction: column;
 }
-.container .content-wrapper .content-name{
-    color: brown;
-    padding: 10px 0;
-    font-weight: bold;
-    font-size: large;
+.entries-search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
-.container .content-wrapper button{
-    width: 100px;
-    padding: 10px 0;
-    background-color: var(--button-color);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.entries-search .entries select{
+    padding: 5px;
 }
-.container .content-wrapper .content-cards{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 60px;
+.entries-search .search input{
+    padding: 5px;
+}
+
+.search-table{
     padding: 20px 0;
 }
-.container .content-wrapper .content-card{
-    /* border: 2px solid black; */
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.search-table th, td{
+    border: 2px solid rgb(196, 189, 189);
     padding: 10px 20px;
+}
+table td button{
+    padding: 10px;
+    width: 70px;
+    background-color: var(--button-color);
     border: none;
-    box-shadow: 5px 5px 5px black;    
+    border-radius: 3px;
+    color: white;
 }
-.container .content-wrapper .content-card .content-card-title{
-    padding: 10px 0;
+table tbody tr:nth-child(odd){
+    background-color: rgb(224, 219, 219);
 }
-.container .content-wrapper .content-card .content-card-count{
-    padding: 10px 0;
+.bottom-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: gray;
+    padding: 20px 0;
 }
-.container .content-wrapper .content-card .content-card-details{
-    padding: 10px 0;
+.bottom-content .page-entries-nav button{
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
 }
-.container .content-wrapper .content-card .content-card-details a{
-    text-decoration: none;
-    font-weight: bold;
+.bottom-content .page-entries-nav button:nth-child(2){
+    background-color: var(--button-color);
+    color: white;
 }
