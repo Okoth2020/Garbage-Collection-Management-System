@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/5f6453ff01.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../../css/user/dashboard_links/requests.css">
+</head>
+<body>
+    <nav>
+        <div class="systemname-dashboard">
+            <div class="sysname">Garbage Collection Management System</div>
+            <div class="dash-logo"><i class="fa-solid fa-house"></i> / Dashboard</div>
+        </div>
+        <div class="nav-icons">
+            <div class="notification"><i class="fa-solid fa-bell"></i></div>
+            <div class="user-icon"><i class="fa-solid fa-user"></i></div>
+        </div>
+    </nav>
+    <main>
+        <div class="side-bar">
+            <div class="personal-info">
+                <img src="../../../images/person.jpeg" alt="">
+                <div class="name">User</div>
+                <div class="email">Email</div>
+            </div>
+            <hr>
+            <div class="side-links">
+                <ul>
+                    <li><i class="fa-solid fa-house"></i> <a href="../dashboard.html">Dashboard</a></li>
+                    <li><i class="fa-solid fa-list"></i> <a href="../dashboard_links/requests.html ">Requests</a></li>
+                    <li><i class="fa-solid fa-trash-arrow-up"></i> <a href="">Create bin</a></li>
+                    <li><i class="fa-solid fa-bell"></i> <a href="../dashboard_links/notification.html">Notifications</a></li>
+                    <li><i class="fa-solid fa-list"></i> <a href="../dashboard_links/complains.html">Complains</a></li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i> <a href="">Search</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="content-title">Request for Collection</div>
+            <div class="content">
+                <div class="content-wrapper">
+                    <form action="#">
+                        <label for="name">Name</label>
+                        <div><input type="text" name="id" id="id" placeholder="Enter name"></div>
+                        <label for="number">Mobile Number</label>
+                        <div><input type="text" name="number" id="number" placeholder="Enter MobileNumber"></div>
+                        <label for="date">Date</label>
+                        <div><input type="date" name="date" id="date" placeholder="Enter date"></div>
+                        <label for="area">Area</label>
+                        <div><input type="text" name="area" id="area" placeholder="Enter area"></div>
+                        <label for="Address">Address</label>
+                        <div><input type="text" name="address" id="address" placeholder="Enter address"></div>
+                        <label for="gps">GPS</label>
+                        <div><input type="text" name="gps" id="gps" placeholder="Enter GPS"></div>
+                        <label for="Package">Package</label>
+                        <div><input type="text" name="package" id="package" placeholder="Enter prefered package"></div>
+                        <label for="Photo">Photo</label>
+                        <div><input type="file" name="photo" id="photo" placeholder="Upload photo"></div>
+                        <button type="submit">Add Request</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+</html>
