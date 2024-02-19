@@ -56,7 +56,12 @@
                         <label for="gps">GPS</label>
                         <div><input type="text" name="gps" id="gps" placeholder="Enter GPS"></div>
                         <label for="Package">Package</label>
-                        <div><input type="text" name="package" id="package" placeholder="Enter prefered package"></div>
+                        <select name="package" id="package">
+                            <option value="residential">Residential</option>
+                            <option value="industrial">Industrial</option>
+                            <option value="construction">Construction Site</option>
+                            <option value="business">Business</option>
+                        </select><br>
                         <label for="Photo">Photo</label>
                         <div><input type="file" name="photo" id="photo" placeholder="Upload photo"></div>
                         <button type="submit">Add Request</button>
