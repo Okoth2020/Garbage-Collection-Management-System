@@ -1,0 +1,71 @@
+@import url(common.css);
+
+nav {
+  background-color: blue;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6vh;
+  padding: 0 10px;
+}
+
+nav a {
+  color: white;
+}
+
+nav .logo {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+nav .navbar-navs {
+  display: flex;
+  gap: 30px;
+  margin-right: 20px;
+}
+
+nav .navbar-navs .notification i:hover {
+  color: brown;
+  cursor: pointer;
+}
+
+nav .notification {
+  position: relative;
+}
+
+nav .notification .bell-count {
+  background-color: red;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  font-size: 11px;
+}
+
+nav .notification-container {
+  background-color: white;
+  position: absolute;
+  border: 2px solid gray;
+  width: 200px;
+  color: black;
+  transform: translateX(-80%);
+  margin-top: 5px;
+}
+
+nav .message {
+  padding: 10px;
+}
+
+nav .message:not(:last-child) {
+  border-bottom: 1px solid gray;
+}
+/* nav .notification-container a{
+  color: black;
+} */

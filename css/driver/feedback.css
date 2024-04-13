@@ -1,0 +1,148 @@
+@import url(common.css);
+
+main .comment-form {
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .comment-form form {
+  background-color: white;
+  width: 40%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+main .comment-form form .comments-title {
+  font-size: 30px;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+main .comment-form form .comments-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+main .comment-form form .comments-inputs textarea {
+  height: 200px;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: sans-serif;
+}
+
+main .comment-form form .comments-inputs select {
+  padding: 5px;
+}
+
+main .comment-form form .comments-inputs button {
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border: 2px solid blue;
+  border-radius: 5px;
+}
+
+main .comment-form form .comments-inputs button:hover {
+  background-color: transparent;
+  color: blue;
+  cursor: pointer;
+}
+
+main .comments .comment-nav {
+  display: flex;
+  background-color: gray;
+  justify-content: space-between;
+  align-items: center;
+  height: 6vh;
+  padding: 0 10px;
+  color: white;
+}
+
+main .comments .comment-nav button {
+  background-color: blue;
+  color: white;
+  padding: 5px 10px;
+  border: 2px solid blue;
+  border-radius: 5px;
+}
+
+main .comments .comment-nav button:hover {
+  background-color: transparent;
+  color: blue;
+  cursor: pointer;
+}
+
+main .comments .comment-content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+main .comments .comment-content .comment-card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+main .comments .comment-content .comment-card .comment-person {
+  border-bottom: 2px solid black;
+  padding: 5px;
+}
+
+main .comments .comment-content .comment-card .comment-person .name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+main .comments .comment-content .comment-card .comment-person .title {
+  font-style: italic;
+  color: gray;
+}
+
+main .comments .comment-content .comment-card .comment-details {
+  margin: 5px;
+}
+
+main .comments .comment-content .comment-card .comment-details .message-nav {
+  display: flex;
+  gap: 10px;
+}
+
+main .comments .comment-content .comment-card .comment-details a img {
+  width: 15px;
+  height: 15px;
+}
+
+main .comments .comment-content .comment-card .comment-details a {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: black;
+  margin-top: 10px;
+}
+
+main .form-warning img {
+  width: 30px;
+  height: 30px;
+}
+main .form-warning {
+  background-color: rgb(255, 0, 0, 0.3);
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+main .form-warning span {
+  font-size: 16px;
+  font-weight: bold;
+  color: red;
+}

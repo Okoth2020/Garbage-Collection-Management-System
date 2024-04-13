@@ -1,0 +1,327 @@
+@import url(../common.css);
+
+.content-wrapper {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.entries-search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.entries-search .entries select {
+  padding: 5px;
+}
+.entries-search .search input {
+  padding: 5px;
+}
+
+.search-table {
+  padding: 20px 0;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.search-table th,
+td {
+  border: 2px solid rgb(196, 189, 189);
+  padding: 10px 20px;
+}
+table td button {
+  padding: 7px;
+  width: 70px;
+  background-color: blue;
+  border: none;
+  border-radius: 3px;
+  color: white;
+}
+table tbody tr:nth-child(odd) {
+  background-color: rgb(224, 219, 219);
+}
+.bottom-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: gray;
+  padding: 20px 0;
+}
+.bottom-content .page-entries-nav button {
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.bottom-content .page-entries-nav button:nth-child(2) {
+  background-color: blue;
+  color: white;
+}
+
+.collection-table .new-request {
+  width: fit-content;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 2px solid blue;
+  background-color: blue;
+  color: white;
+}
+
+.collection-table .new-request:hover {
+  background-color: transparent;
+  color: blue;
+  cursor: pointer;
+}
+
+/* Requests */
+.details-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+}
+
+.details-container .details-title {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.details-container .details-table {
+  margin: 20px 5px;
+  display: grid;
+  grid-template-columns: repeat(1fr, 5);
+  grid-template-rows: repeat(1fr 8);
+}
+
+.details-container .details-table div {
+  border: 1px solid rgb(128, 128, 128);
+  padding: 10px;
+}
+
+.details-container .details-table div:first-child {
+  grid-column: 1 / 2;
+}
+
+.details-container .details-table div:nth-child(2) {
+  grid-column: 2 / 5;
+}
+
+.details-container .details-table div:nth-child(3) {
+  grid-column: 1 / 2;
+}
+
+.details-container .details-table div:nth-child(4) {
+  grid-column: 2 / 3;
+}
+
+.details-container .details-table div:nth-child(5) {
+  grid-column: 3 / 4;
+}
+
+.details-container .details-table div:nth-child(6) {
+  grid-column: 4 / 5;
+}
+
+.details-container .table-header {
+  font-weight: bold;
+}
+
+.details-container .details-table .garbage-image-header {
+  grid-row-start: 6;
+  grid-column-start: 1;
+}
+
+.details-container .details-table .garbage-image {
+  grid-row-start: 6;
+  grid-column: 2 / 5;
+}
+
+.details-container .details-table .garbage-image img {
+  width: 300px;
+}
+
+.details-container .details-table div:nth-child(21) {
+  grid-row-start: 7;
+}
+
+.details-container .details-table div:nth-child(22) {
+  grid-row-start: 7;
+}
+
+.details-container .details-table div:nth-child(23) {
+  grid-row-start: 7;
+  grid-column-start: 3;
+}
+
+.details-container .details-table div:nth-child(24) {
+  grid-row-start: 7;
+  grid-column-start: 4;
+}
+
+.details-container .details-table div:nth-child(25) {
+  grid-row-start: 9;
+}
+
+.details-container .details-table div:nth-child(26) {
+  grid-row-start: 9;
+}
+
+.details-container .details-table div:nth-child(27) {
+  grid-row-start: 9;
+  grid-column-start: 3;
+}
+
+.details-container .details-table div:nth-child(28) {
+  grid-row-start: 9;
+  grid-column-start: 4;
+}
+
+.details-container .tracking-history-table {
+  display: grid;
+  grid-template-columns: repeat(1fr, 5);
+  grid-template-rows: repeat(1fr, 4);
+  margin: 10px;
+}
+
+.details-container .tracking-history-table div {
+  border: 1px solid rgb(128, 128, 128);
+  padding: 10px;
+}
+
+.details-container .tracking-history-table .tracking-history-title {
+  color: blue;
+  font-weight: bold;
+  text-align: center;
+  grid-column: 1 / 5;
+}
+
+.details-container .take-action {
+  display: flex;
+  justify-content: center;
+}
+
+.details-container .take-action button {
+  padding: 10px 0;
+  width: 200px;
+  border: 2px solid blue;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+}
+
+.details-container .take-action button:hover {
+  background-color: transparent;
+  color: blue;
+  cursor: pointer;
+}
+
+.take-action-popup {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.take-action-popup .take-action-close {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 50px;
+}
+
+.take-action-popup .take-action-close img {
+  width: 20px;
+  height: 20px;
+}
+
+.take-action-popup form {
+  background-color: white;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.take-action-popup form .take-action-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+}
+
+.take-action-popup form hr {
+  border: 1px solid rgb(184, 184, 184);
+}
+
+.take-action-popup form .take-action-form-table {
+  display: grid;
+  padding: 10px;
+}
+
+.take-action-popup form .take-action-form-table div {
+  border: 1px solid rgb(197, 197, 197);
+  padding: 5px;
+}
+
+.take-action-popup form .take-action-form-table .table-header {
+  grid-column-start: 1;
+}
+
+.take-action-popup form .take-action-form-table .table-header:first-child,
+.take-action-popup form .take-action-form-table .remark-content {
+  background-color: rgb(223, 223, 223);
+}
+
+.take-action-popup form .take-action-form-table .table-content {
+  grid-column-start: 2;
+}
+
+.take-action-popup form .take-action-form-table .table-content input,
+.take-action-popup form .take-action-form-table .table-content select,
+.take-action-popup form .take-action-form-table .table-content textarea {
+  padding: 5px;
+  width: 100%;
+  border: 2px solid rgb(128, 128, 128);
+  border-radius: 5px;
+}
+
+.take-action-popup form .take-action-form-table .table-content textarea {
+  height: 300px;
+}
+
+.take-action-popup form .take-action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  gap: 5px;
+}
+
+.take-action-popup form .take-action-buttons button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  width: 100px;
+  border: 2px solid blue;
+}
+
+.take-action-popup form .take-action-buttons button:hover {
+  background-color: transparent;
+  color: blue;
+  cursor: pointer;
+}

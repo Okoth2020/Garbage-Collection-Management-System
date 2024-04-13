@@ -1,0 +1,160 @@
+@import url(../common.css);
+
+.payment-container {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-container .payment-close {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.payment-container .payment-close img {
+  width: 20px;
+  height: 20px;
+}
+
+.payment-container .payment {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 30%;
+}
+
+.payment-container .payment .payment-info .payment-title {
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+}
+
+.payment-container .payment .payment-info .payment-package {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: var(--primary-color);
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.payment-container .payment .payment-info .payment-package .amount {
+  font-weight: bold;
+}
+
+.payment-container .payment .payment-nav {
+  display: flex;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+}
+
+.payment-container .payment .payment-nav div {
+  padding: 5px 0;
+  text-align: center;
+  flex: 1;
+  border-radius: 10px;
+}
+
+.payment-container .payment .payment-nav div:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+.payment-container .payment .payment-nav .active {
+  background-color: green;
+  color: white;
+}
+
+.payment-container .payment .payment-card img {
+  width: 200px;
+}
+
+.payment-container .payment .payment-card:first-child img {
+  height: 100px;
+}
+
+.payment-container .payment .payment-card:last-child img {
+  height: 70px;
+  margin: 10px;
+}
+
+.payment-container .payment .payment-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.payment-container .payment .payment-card form {
+  width: 100%;
+}
+
+.payment-container .payment .payment-card form div {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.payment-container .payment .payment-card label {
+  font-weight: bold;
+  font-size: 16px;
+  color: green;
+}
+
+.payment-container .payment .payment-card input {
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 2px solid green;
+}
+
+.payment-container .payment .payment-card button {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid green;
+  font-weight: bold;
+  font-size: 18px;
+  width: 100%;
+}
+
+.payment-container .payment .payment-card button:hover {
+  background-color: transparent;
+  color: green;
+}
+
+main .form-warning img {
+  width: 30px;
+  height: 30px;
+}
+main .form-warning {
+  background-color: rgb(255, 0, 0, 0.3);
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+main .form-warning span {
+  font-size: 16px;
+  font-weight: bold;
+  color: red;
+}
